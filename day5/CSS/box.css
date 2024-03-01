@@ -1,0 +1,44 @@
+body{
+    /* background-image:url("/day5/images2/landscape3.jpg") ; */
+    background-repeat: no-repeat;
+   backface-visibility: visible;
+   background-size: cover;
+}
+#box{
+    border: 10px solid darkgrey;
+    height: 100px;
+    width: 300px;
+    padding: 40px;
+    margin: 20px;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    box-shadow: 30px 20px red;
+    transition: 2.5s;
+    
+}
+#box1{
+    border: 10px solid rgb(233, 13, 13);
+    height: 100px;
+    width: 300px;
+    padding: 40px;
+    margin: 20px;
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+#box:hover{
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: green;
+    font-weight: bolder;
+    
+}
+#box1:hover{
+    background-image: url("/day5/images2/leaf\ image.jpg");
+    background-size: cover;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}

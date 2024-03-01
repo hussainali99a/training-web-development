@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+            border: 2px solid black;
+            width: 40%;
+            margin: 10px auto ;
+            padding: 20px;
+        }
+
+        label {
+            width: 200px;
+        }
+
+        .field {
+            display: flex;
+            justify-content: start;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="flex">
+        <div class="field">
+            <label for="fname"></label>
+
+            <div>
+                <span>
+                    <input type="radio" name="prefix" id="Mr" value="Mr">
+                    <label for="Mr">Mr</label>
+                </span>
+                <span>
+                    <input type="radio" name="prefix" id="Mrs" value="Mrs">
+                    <label for="Mrs">Mrs</label>
+                </span>
+                <span>
+                    <input type="radio" name="prefix" id="Ms" value="Ms">
+                    <label for="Ms">Ms</label>
+                </span>
+            </div>
+        </div>
+        <div class="field">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname">
+        </div>
+        <div class="field"><label for="lname">Last Name</label>
+            <input type="text" name="lname">
+        </div>
+        <div class="field"><label for="DOJ">Date Of Joining</label>
+            <input type="date">
+        </div>
+        <div class="field"><label for="email1">Mail Address1</label>
+            <input type="email" name="email1" id="email1">
+        </div>
+        <div class="field"><label for="email2">Mail Address2</label>
+            <input type="email" name="email2" id="email2">
+        </div>
+        <div class="field"><label for="city">City</label>
+            <input type="text">
+        </div>
+        <div class="field"><label for="state">State</label>
+            <!--- India states -->
+            <select id="state" name="state">
+                <option value="">Select state</option>
+                <option value="AN">Andaman and Nicobar Islands</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="AR">Arunachal Pradesh</option>
+                <option value="AS">Assam</option>
+                <option value="BR">Bihar</option>
+                <option value="CH">Chandigarh</option>
+                <option value="CT">Chhattisgarh</option>
+                <option value="DN">Dadra and Nagar Haveli</option>
+                <option value="DD">Daman and Diu</option>
+                <option value="DL">Delhi</option>
+                <option value="GA">Goa</option>
+                <option value="GJ">Gujarat</option>
+                <option value="HR">Haryana</option>
+                <option value="HP">Himachal Pradesh</option>
+                <option value="JK">Jammu and Kashmir</option>
+                <option value="JH">Jharkhand</option>
+                <option value="KA">Karnataka</option>
+                <option value="KL">Kerala</option>
+                <option value="LA">Ladakh</option>
+                <option value="LD">Lakshadweep</option>
+                <option value="MP">Madhya Pradesh</option>
+                <option value="MH">Maharashtra</option>
+                <option value="MN">Manipur</option>
+                <option value="ML">Meghalaya</option>
+                <option value="MZ">Mizoram</option>
+                <option value="NL">Nagaland</option>
+                <option value="OR">Odisha</option>
+                <option value="PY">Puducherry</option>
+                <option value="PB">Punjab</option>
+                <option value="RJ">Rajasthan</option>
+                <option value="SK">Sikkim</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="TG">Telangana</option>
+                <option value="TR">Tripura</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="UT">Uttarakhand</option>
+                <option value="WB">West Bengal</option>
+            </select>
+        </div>
+        <div class="field"><label for="Zip">Zip</label>
+            <input type="number" name="Zip" id="Zip">
+        </div>
+        <div class="field"><label for="photo">Upload Photo</label>
+            <input type="file" name="file" id="photo">
+        </div>
+        <div class="field"><label for="email">E-mail</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="field"><label for="mobile">Mobile</label>
+            <input type="tel" placeholder="+91" name="mobile" id="mobile">
+        </div>
+        <div class="field"><label for="fname">Language known</label>
+            <div class="box">
+                <span>
+                    <input type="checkbox" name="Gujrati" id="Gujrati" value="gujrati">
+                    <label for="Gujrati">Gujrati</label>
+                </span>
+                <span>
+                    <input type="checkbox" name="hindi" id="hindi" value="hindi">
+                    <label for="hindi">Hindi</label>
+                </span>
+                <span>
+                    <input type="checkbox" name="english" id="english">
+                    <label for="english">English</label>
+                </span>
+                <span>
+                    <input type="checkbox" name="Marathi" id="Marathi">
+                    <label for="Marathi">Marathi</label>
+                </span>
+
+            </div>
+        </div>
+        <div class="field"><label for="other-info">Additional information</label>
+            <textarea name="other-info" id="other-info" cols="30" rows="4"></textarea>
+        </div>
+        <!-- </div> -->
+        <div class="field"><label for="other-info"></label>
+            <div class="buttongroup">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

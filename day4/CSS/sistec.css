@@ -1,0 +1,28 @@
+body{
+    background-image:url("/day4/IMAGE/sistec-gandhinagar-bhopal-4dbgxw6b9v2.avif") ;
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+h1,h2{
+    text-align: center;
+}
+h2{
+    background-color: blueviolet;
+    display: inline;
+    margin-left: 34%;
+    margin-top: 40px;
+}
+h1{
+    color: burlywood;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#back{
+    background-image: url("/day4/IMAGE/backgroundimage.jpg");
+    background-repeat:repeat;
+    display: block;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+p{
+    text-align: center;
+}

@@ -1,0 +1,5 @@
+body{
+    /* background-color: rgba(2, 450,0, 0.5); */
+    /* background:linear-gradient(to right,orangered,white,green); */
+    background:radial-gradient(circle,orangered,white,green);
+}
