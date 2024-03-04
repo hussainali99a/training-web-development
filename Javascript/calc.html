@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jscript7</title>
+    <style>
+        body{
+            margin-top: 50px;
+        }
+        h1{
+            text-align: center;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+        }
+        .button{
+            display: flex;
+            flex-direction: column;
+            border: 2px solid red;
+            width: 250px;
+            height: 200px;
+        }
+        .layer1,.layer2,.layer3{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 70px;
+            justify-content: center;
+            border: 2px black solid;
+        }
+        .but{
+            width: 33%;
+            border: 2px blue solid;
+            background-color: grey;
+            padding-top: 18px;
+        }
+        .answer{
+            width: 250px;
+            height: 50px;
+            border: 2px solid black;
+        }
+        .take1,.take2{
+            width: 250px;
+            height: 20px;
+        }
+        button{
+            width: 100%;
+            border-radius: 10px;
+            color:black;
+            font-weight: bolder;
+        }
+        
+    </style>
+    <script>
+        var a,b,c;
+        function geta(){
+            a = parseInt(prompt(("enter the number1")));
+        }
+        function getb(){
+            b = parseInt(prompt(("enter the number2")));
+        }
+        function add(){
+            c = a+b;
+            document.getElementById("answer").innerHTML=c;
+        }
+        function sub(){
+            c = a-b;
+            document.getElementById("answer").innerHTML=c;
+        }
+        function product(){
+            c = a*b;
+            document.getElementById("answer").innerHTML=c;
+        }
+        function division(){
+            c = a/b;
+            document.getElementById("answer").innerHTML=c;
+        }
+        function remainder(){
+            c = a%b;
+            document.getElementById("answer").innerHTML=c;
+        }
+        function square(){
+            c = a^b;
+            document.getElementById("answer").innerHTML=c;;
+        }
+        function cube(){
+            c = a^b;
+            document.getElementById("answer").innerHTML=c;
+        }
+        function cube(){
+            c = a^b;
+            document.getElementById("answer").innerHTML=c;
+        }
+      
+    </script>
+</head>
+<body>
+    <h1>Online Calculator</h1>
+    <div class="main">
+        <div>
+            <button class="take1" onclick="geta()">Enter the number one</button><br>
+        </div>
+        <div>
+            <button  class="take2" onclick="getb()">Enter the number two</button>
+        </div>
+        <div class="button">
+            <div class="layer1">
+                <div class="but" id="add"><button onclick="add()">Add</button></div>
+                <div class="but"><button onclick="sub()">Sub</button></div>
+                <div class="but"><button onclick="product()">product</button></div>
+            </div>
+            <div class="layer2">
+                <div class="but"><button onclick="division()">Division</button></div>
+                <div class="but"><button onclick="square()">Sqaure</button></div>
+                <div class="but"><button onclick="cube()">Cube</button></div>
+            </div>
+            <div class="layer3">
+                <div class="but"></div>
+                <div class="but"></div>
+                <div class="but"></div>
+            </div>
+        </div>
+        <div class="answer" id="answer"></div>
+            
+
+    </div>
+</body>
+</html>
