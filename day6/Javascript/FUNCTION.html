@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jscript</title>
+    <style>
+        button{
+        border-radius: 20px; 
+        width: 150px; 
+        height: 20px; 
+        border: 2px solid black; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+        font-weight: bolder;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        function add(a,b){
+            var c = 0;
+            c= a + b;
+            window.alert("a="+a+"b="+b+"sum of a and b"+c)
+        }
+        function sub(a,b){
+            var c;
+            c= a - b;
+            window.alert("a="+a+"b="+b+"substraction of a and b"+c)
+        }
+        function product(a,b){
+            var c;
+            c= a * b;
+            window.alert("a="+a+"b="+b+"product of a and b"+c)
+        }
+        function division(a,b){
+            var c;
+            c= a / b;
+            window.alert("a="+a+"b="+b+"division of a and b"+c)
+        }
+
+    </script>
+    <button onclick="add(12,56)" style=" background-color: red;">Sum</button>
+    <button onclick="sub(12,56)" style=" background-color:blue;">Sub</button>
+    <button onclick="product(12,56)" style="background-color: green;">Product</button>
+    <button onclick="division(12,56)" style="background-color: purple;">Division</button>
+</body>
+</html>

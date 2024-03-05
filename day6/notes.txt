@@ -1,0 +1,12 @@
+document.write()
+window.alert()
+console.log()
+document.getElementbyId().innerHTML=add; is used to print value on a div it take the value from variable
+and print it in div , id should be unique
+use window.alert() for pop up box representation
+statement for function declarement:
+
+syntax:
+function function_name(parameter){
+    statement;
+}

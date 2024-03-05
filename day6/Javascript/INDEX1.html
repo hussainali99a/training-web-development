@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        body{
+            background:linear-gradient(green,yellow,red);
+        }
+        div{
+            color: darkblue;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div id = "data1" style="border: 2px solid red; height: 100px; width: 10%; margin-top: 10px;"></div>
+    <div id = "data2" style="border: 2px solid red; height: 100px; width: 10%; margin-top: 10px;"></div>
+    <div id = "data3" style="border: 2px solid red; height: 100px; width: 10%; margin-top: 10px;"></div>
+    <div id = "data4" style="border: 2px solid red; height: 100px; width: 10%; margin-top: 10px;"></div>
+    <script>
+        var n1 = 10;
+        var n2 = 20;
+        var add , sub , product , division;
+        add = n1 + n2;
+        sub = n1 - n2;
+        product = n1*n2;
+        division = n1/n2;
+        document.write('<h1> a = '+n1+ '<h1>' ,'<h1> b = '+n2+ '<h1>' );
+        document.write('<h1> addition variable a and b = '+add+ '</h1>');
+        document.write('<h1> substraction variable a and b = '+sub+ '</h1>');
+        document.write('<h1> product variable a and b = '+product+ '</h1>');
+        document.write('<h1> division variable a and b = '+division+ '</h1>');
+        document.getElementById('data1').innerHTML=add;
+        document.getElementById('data2').innerHTML=sub;
+        document.getElementById('data3').innerHTML=product;
+        document.getElementById('data4').innerHTML=division;
+        // window.alert('add='+add);
+        console.log("add="+add);
+        
+    </script>
+</body>
+</html>
