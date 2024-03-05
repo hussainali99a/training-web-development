@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jscript9</title>
+    <style>
+        .answer{
+            border:2px solid black;
+            height: 50px;
+            width: 200px;
+            background-color: yellowgreen;
+            text-align: center;
+            border-radius: 30px;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 10px;
+        }
+        button{
+            width: 60px;
+            height: 30px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="geta()">GetA</button>
+    <button onclick="getb()">GetB</button>
+    <button onclick="sum()">Sum</button>
+    <button onclick="sub()">Sub</button>
+    <button onclick="product()">Product</button>
+    <button onclick="division()">Division</button>
+    <br>
+    <div  class = "answer" id="answer"></div>
+    <script>
+        var a,b,c;
+        function geta(){
+            a  = parseInt(prompt("enter the value of a:"));
+        }
+        function getb(){
+            b = parseInt(prompt("enter the value of b:"));
+        }
+        function sum(){
+            c =  a+b;
+            document.getElementById("answer").innerHTML=c;
+        }
+        function sub(){
+            c = a-b;
+            document.getElementById("answer").innerHTML=c;
+        }
+        function product(){
+            c = a*b;
+            document.getElementById("answer").innerHTML=c;
+        }
+        function division(){
+            c = a/b;
+            document.getElementById("answer").innerHTML=c;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        h1{
+            text-align: center;
+            color: darkblue;
+        }
+        form{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border: 2px blue solid;
+            border-radius: 20px;
+            background-color:rgb(204, 176, 22);
+        }
+        #result{
+            border: 0.5px solid black;
+            width: 250px;
+            height: 19px;
+            margin-top: 0px;
+            background-color: white;
+            text-align: center;
+        }
+        .result{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding-top: 10px;
+            border: 4px double black;
+            background-color: rgb(201, 198, 198);
+            height: 280px;
+        }
+        .button{
+            display: flex;
+            float: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            height: 150px;
+            background-color: yellowgreen;
+            /* padding: 100px; */
+        }
+        label{
+            font-weight: bolder;
+        }
+        button{
+            width: 70px;
+            height: 30px;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-color: grey;
+            font-weight: bolder;
+        }
+        legend{
+            font-weight: bolder;
+        }
+
+        
+
+
+    </style>
+    <script>
+        var a,b,c;
+        function add(){
+            a = document.getElementById("firstvalue").value;
+            b = document.getElementById("secondvalue").value;
+            c = Number(a)+ Number(b);
+            document.getElementById("result").innerHTML=c;
+        }
+        function sub(){
+            a = document.getElementById("firstvalue").value;
+            b = document.getElementById("secondvalue").value;
+            c = Number(a)- Number(b);
+            document.getElementById("result").innerHTML=c;
+        }
+        function pro(){
+            a = document.getElementById("firstvalue").value;
+            b = document.getElementById("secondvalue").value;
+            c = Number(a)* Number(b);
+            document.getElementById("result").innerHTML=c;
+        }
+        function div(){
+            a = document.getElementById("firstvalue").value;
+            b = document.getElementById("secondvalue").value;
+            c = Number(a)/ Number(b);
+            document.getElementById("result").innerHTML=c;
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    
+        <fieldset class="main">
+            <legend>Calculator</legend>
+            <form action="">
+                <div>
+                    <label for="value">First Value</label>
+                    <input type="text" id="firstvalue" size="30">
+                </div>
+                <div>
+                    <label for="value">Second value</label>
+                    <input type="text" name="" id="secondvalue" size="30">
+                </div>
+                <div class="result">
+                    <label for="result">Result</label>
+                    <div id="result"></div>
+                </div>
+            </form>
+            <div class="button">
+                <button onclick="add()">Sum(+)</button>
+                <button onclick="sub()">Sub(-)</button>
+                <button onclick="div()">Div(/)</button>
+                <button onclick="pro()">Pro(*)</button>
+            </div>
+        </fieldset>
+        
+  
+</body>
+</html>

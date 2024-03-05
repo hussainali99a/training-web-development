@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: row;
+        }
+        .box{
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box" id="name"></div>
+        <div class="box"id="branch"></div>
+        <div class="box"id="Roll_no."></div>
+        <div class="box"id = college_name></div>
+    </div>
+    <script>
+        var student={
+            name:"Mustafa Qasim Ali",
+            branch : "AI-DS",
+            Roll_no:"0187AS21028",
+            college_name:"Sistec"
+        }
+        document.getElementById("name").innerHTML=student.name;
+        document.getElementById("branch").innerHTML=student.branch;
+        document.getElementById("Roll_no").innerHTML=student.Roll_no;
+        document.getElementById("college_name").innerHTML=student.college_name;
+
+    </script>
+</body>
+</html>

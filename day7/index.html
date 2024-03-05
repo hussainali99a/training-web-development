@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jscript8</title>
+    <style>
+        div{
+            margin: 0px;
+           border: 2px solid black;
+           height: 400px;
+           width: 400px;
+           display: inline-block; 
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="befswap"></div>
+        <div id="afterswap"></div>
+    </div>
+    <script>
+        var a=10,b=20,c;
+        function norm(){
+            return "<h1>before swapping: a="+a+" b="+b+"</h1>";
+            // document.getElementById("befswap").innerHTML=norm();
+        }
+        function swap(){
+            c = a;
+            a = b;
+            b = c;
+            return "<h1>after swapping:a="+a+"b="+b+"</h1>";
+            // document.getElementById("befswap").innerHTML=norm();
+        }
+        document.getElementById("befswap").innerHTML=norm();
+        document.getElementById("afterswap").innerHTML=swap(); 
+    </script>
+</body>
+</html>

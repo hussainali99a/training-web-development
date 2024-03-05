@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        h1{
+            text-align: center;
+            color: darkblue;
+        }
+        form{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border: 2px blue solid;
+            border-radius: 20px;
+            background-color:rgb(204, 176, 22);
+        }
+        #result{
+            border: 0.5px solid black;
+            width: 250px;
+            height: 19px;
+            margin-top: 0px;
+            background-color: white;
+            text-align: center;
+        }
+        .result{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding-top: 10px;
+            border: 4px double black;
+            background-color: rgb(201, 198, 198);
+            height: 280px;
+        }
+        .button{
+            display: flex;
+            float: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            height: 150px;
+            background-color: yellowgreen;
+            /* padding: 100px; */
+        }
+        label{
+            font-weight: bolder;
+        }
+        button{
+            width: 80px;
+            height: 30px;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-color: grey;
+            font-weight: bolder;
+        }
+        legend{
+            font-weight: bolder;
+        }
+
+    </style>
+    <script>
+        var a;
+        function vote(){
+            a = document.getElementById("age").value;
+            if(a>=18){
+                alert("you are eligible for vote");
+            }
+            else{
+                alert("not eligible for vote");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    
+        <fieldset class="main">
+            <legend>Vote</legend>
+            <form action="">
+                <div>
+                    <label for="value">Enter your age:</label>
+                    <input type="text" id="age" size="30">
+                </div>
+            </form>
+            <div class="button">
+                <button onclick="vote()">Click Me</button>
+            </div>
+        </fieldset>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var a=document.getElementById("n1").value;
+            var b=document.getElementById("n2").value;
+            var c=document.getElementById("n3").value;
+            var d = Number(a)+Number(b)+Number(c);
+            document.getElementById("result").value=d;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" name="" id="n1" placeholder="enter the first value:"><br><br>
+    <input type="text" name="" id="n2" placeholder="enter the second value:"><br><br>
+    <input type="text" name="" id="n3" placeholder="enter the third value:"><br><br>
+    <!-- <input type="text" name="" id="result" placeholder="Addition" onfocus="add()"><br><br> -->
+    <textarea name="" id="result" cols="30" rows="1" onfocus="add()" placeholder="Addition"></textarea>
+</body>
+</html>
