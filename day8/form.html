@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration.in</title>
+    <link rel="stylesheet" href="/day8/CSS/styles2.css">
+    <!-- <script src="/day8/Javascript/form.js"></script> -->
+</head>
+<body>
+    <script>
+        function verify(){
+        var name =document.getElementById("name")
+        var gender = document.getElementsByName("gender")
+        var username = document.getElementById("username")
+        var password = document.getElementById("password")
+        var msg = new Array();
+        var flag = 1;
+        var message = "following details are required\n";
+        if(name.value == " "){
+            msg[0] = "name is required";
+            flag = 0;
+        }else{msg[0]=" ";}
+
+        if(gender[0].checked==false &&gender[1].checked==false){
+            msg[1] = "select Gender";
+            flag = 0;
+        }else{msg[1]=" ";}
+
+        if(username.value == " "){
+            msg[2] = "username is required";
+            flag = 0;
+        }else{msg[2]=" ";}
+
+        if(password.value == " "){
+            msg[3] = "password is required";
+            flag = 0;
+        }else{msg[3]=" ";}
+        if(password.value.length<8){
+            msg[4] = "password must be 8 character long";
+            flag = 0;
+        }else{msg[4]=" ";}
+
+        if(flag==0){
+            for(var x = 0;x<=4;x++){
+                if(msg[x]!=""){
+                    message+=msg[x]='\n'+msg[1]+'\n'+msg[2]+'\n'+msg[3]+'\n'+msg[4];
+                }
+            }
+            alert(message);
+            document.getElementById("abc").innerHTML=message;
+            return false;
+        }else{return true;}
+}
+    </script>
+    <h1>Registration</h1>
+    <h1 id="abc"></h1>
+    <form action="" onsubmit="return verify()">
+        <div class="box1 center"><p>*All fields are mandatory</p></div>
+        <div class="box2">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter Name" id="name" size="40">
+        </div>
+        <div class="box3">
+            <label id="gender" for="Gender" name="gender">Gender</label>
+            <input type="radio" name="" id="" >
+            <label for="Male" id="gender">Male</label>
+            <input type="radio">
+            <label for="Female" id="gender">Female</label>
+        </div>
+        <div class="box4">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter Username" size="40" id="username">
+        </div>
+        <div class="box5">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Password" size="40" id="password">
+        </div>
+        <div class="button">
+            <button onclick="verify()">REGISTER</button>
+            <button>CLEAR</button>
+        </div>
+    </form>
+</body>
+</html>

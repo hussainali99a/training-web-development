@@ -1,0 +1,68 @@
+h1{
+    text-align: center;
+    color: darkblue;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px blue solid;
+    border-radius: 20px;
+    background-color:rgb(204, 176, 22);
+}
+#result{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 250px;
+    height: 19px;
+    margin-top: 0px;
+    background-color: white;
+    text-align: center;
+}
+.result{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 10px;
+    border: 4px double black;
+    background-color: rgb(201, 198, 198);
+    height: 280px;
+}
+.button{
+    display: flex;
+    float: row;
+    /* gap: 30px; */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 250px;
+    
+    background-color: yellowgreen;
+    /* padding: 100px; */
+}
+label{
+    font-weight: bolder;
+}
+/* button{
+    width: 100px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: grey;
+    font-weight: bolder;
+} */
+legend{
+    font-weight: bolder;
+}
+input{
+    border-radius: 20px;
+    border: 2px solid black;
+}
+select{
+    width: 100px;
+}

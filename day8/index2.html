@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc.in</title>
+    <link rel="stylesheet" type="text/CSS"  href="/day8/CSS/style.css">
+    <script>
+        // var a,b,c,i;
+        // a = document.getElementById("firstvalue").value;
+        // b = document.getElementById("secondvalue").value;
+        // i = document.getElementById("course").value;
+        function operation(){
+            var a,b,i;
+            i = document.getElementById("course").value;
+            a = parseInt(document.getElementById("input1").value);
+            b = parseInt(document.getElementById("input2").value);
+            // i = document.getElementById("course").value;
+            switch(i){
+                case "Add":
+                    confirm("Press ok");
+                    var c =a+b;
+                    document.getElementById("result").innerHTML=c;
+                    break;
+                case "Sub":
+                    confirm("Press ok");
+                    var c =a-b;
+                    document.getElementById("result").innerHTML=c;
+                    break;
+                case "Product":
+                    confirm("Press ok");
+                    var c = a*b;
+                    document.getElementById("result").innerHTML=c;
+                    break;
+                case "Division":
+                    confirm("Press ok");
+                    var c =a/b;
+                    document.getElementById("result").innerHTML=c;
+                    break;
+                default:
+                    document.getElementById("result").innerHTML="nothing selected";
+        }
+    }  
+    </script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    
+        <fieldset class="main">
+            <legend>Calculator</legend>
+            <form action="" autocomplete="off">
+                <div>
+                    <label for="value1">First number</label>
+                    <input type="text" id="input1" size="20">
+                </div>
+                <div>
+                    <label for="value2">Second number</label>
+                    <input type="text" name="" id="input2" size="20">
+                </div>
+                <div class="result">
+                    <label for="result">Result</label>
+                    <div id="result"></div>
+                </div>
+            </form>
+            <div class="button">
+                <select name="courses" id="course" onchange="operation(this)">
+                    <option selected>Selected Course</option>
+                    <option value="Add">Add</option>
+                    <option value="Sub">Sub</option>
+                    <option value="Product">Product</option>
+                    <option value="Division">Division</option>
+                </select>
+            </div>
+        </fieldset>
+</body>
+</html>

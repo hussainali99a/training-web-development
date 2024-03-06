@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greatest.in</title>
+    <link rel="stylesheet" type="text/CSS"  href="/day8/CSS/style.css">
+    <script>
+        var a,b,c;
+        function greatest(){
+            a = document.getElementById("firstvalue").value;
+            b = document.getElementById("secondvalue").value;
+            c = document.getElementById("thirdvalue").value;
+            if(Number(a)>Number(b)&&Number(a)>Number(c)){
+                document.getElementById("result").innerHTML=("First Num is Greatest");
+            }
+            else if(Number(b)>Number(a)&&Number(b)>Number(c)){
+                document.getElementById("result").innerHTML=("Second Num is Greatest");
+            }
+            else{
+                document.getElementById("result").innerHTML=("Third Num is Greatest");
+            }    
+        }
+    </script>
+</head>
+<body>
+    <h1>Greatest Among Three Number</h1>
+    
+        <fieldset class="main">
+            <legend>Greatest</legend>
+            <form action="" autocomplete="off">
+                <div>
+                    <label for="value">First number</label>
+                    <input type="text" id="firstvalue" size="20">
+                </div>
+                <div>
+                    <label for="value">Second number</label>
+                    <input type="text" name="" id="secondvalue" size="20">
+                </div>
+                <div>
+                    <label for="value">Third number</label>
+                    <input type="text" name="" id="thirdvalue" size="20">
+                </div>
+                <div class="result">
+                    <label for="result">Result</label>
+                    <div id="result"></div>
+                </div>
+            </form>
+            <div class="button">
+                <button onclick="greatest()">Click On me</button>
+            </div>
+        </fieldset>
+</body>
+</html>
